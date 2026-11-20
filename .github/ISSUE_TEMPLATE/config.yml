@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Questions & help
+    url: https://github.com/CodeArchy/codearchy/discussions/categories/q-a
+    about: Ask and answer questions in GitHub Discussions
+  - name: Report a security vulnerability
+    url: https://github.com/CodeArchy/.github/blob/main/SECURITY.md
+    about: Please report vulnerabilities privately. Don't open a public issue.

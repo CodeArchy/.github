@@ -1,0 +1,52 @@
+name: Bug report
+description: Something isn't working as expected
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug! Please search [existing issues](https://github.com/CodeArchy/codearchy/issues) first.
+        **Security vulnerabilities:** don't report them here. See [SECURITY.md](https://github.com/CodeArchy/.github/blob/main/SECURITY.md).
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What did you see, and what did you expect to see instead?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open a project that…
+        2. Run "CodeArchy: Show Architecture"
+        3. …
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: CodeArchy version
+      description: Shown in the VS Code Extensions view
+      placeholder: e.g. 1.0.4
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, VS Code version, and AI model if relevant
+      placeholder: e.g. macOS 15, VS Code 1.96, Ollama gemma4:e4b
+  - type: dropdown
+    id: languages
+    attributes:
+      label: Main language(s) of the analysed project
+      multiple: true
+      options: [TypeScript/JavaScript, Python, Java, Go, Rust, Other]
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or screenshots
+      description: Output panel logs, error messages or screenshots. Please remove anything sensitive.
+      render: text

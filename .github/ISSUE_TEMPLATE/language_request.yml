@@ -1,0 +1,31 @@
+name: Language support request
+description: Ask for a programming language to be supported, or improved
+labels: ["language", "enhancement", "triage"]
+body:
+  - type: input
+    id: language
+    attributes:
+      label: Language
+      placeholder: e.g. Kotlin, C#, PHP, Ruby
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Request type
+      options:
+        - New language support
+        - Improve existing support (missing symbols, imports or dependencies)
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: Build tool or project layout (e.g. Gradle, Composer, .csproj), frameworks used, and a link to a public example repository if possible.
+  - type: checkboxes
+    id: contribute
+    attributes:
+      label: Contribution
+      options:
+        - label: I'd be interested in helping add this language
